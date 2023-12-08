@@ -1,0 +1,188 @@
+	@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+	
+	@media screen and (min-width: 1680px) {
+		.notification-render {
+		    position: relative;
+		    top: 75px;
+		    left: 15px;
+		}
+	}
+	@media screen and (min-width: 1024px) and (max-width: 1679px) {
+		.notification-render {
+		    position: relative;
+		    display: flex;
+		    justify-content: right;
+		    top: 95px;
+		    right: 15px;
+		}
+	}
+	
+	.input_exemple {
+		width: 74.2px;
+		height: 19.9px;
+		border: 2px solid #03ff92;
+		font-family: Arial, Helvetica, sans-serif;
+	    font-size: 12px;
+	    margin-bottom: 3px;
+	    color: #fff;
+	    background-color: #000;
+	    font-weight: bold;
+	}
+	
+	.notification {
+		display: flex;
+		background-color: rgb(255 255 255 / 50%)!important;
+		position: fixed;
+		backdrop-filter: blur(20px);
+		text-align: center;
+		margin-left: 40px!important
+		margin-top: 20px;
+		padding: 9px 20px;
+		border-radius: 5px;
+		box-shadow: #cfcfcf 1px 1px 0px 1px;
+	    width: auto;
+	    height: 65px;
+	    opacity: 0;
+	    transition: opacity 0.6s;
+	    z-index: 1;
+	}
+	.notification-animate {
+        opacity: 1!important;
+	}
+	.notification p {
+        font-family: "Poppins", sans-serif;
+        color: rgb(0 0 0);
+        font-weight: 500;
+        font-size: 14px;
+        margin-right: 0px;
+        margin-left: 12px;
+        margin-top: 15px;
+	}
+	
+	.tooltip_header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	
+	.tooltip_header > img {
+		position: absolute;
+	    width: 15%;
+	    left: 57px;
+	    top: -26px;
+	}
+
+	.tooltip- {
+	    position: relative;
+	    display: inline-block;
+	}
+	
+	.tooltip- .tooltiptext- {
+		backdrop-filter: blur(15px);
+	    visibility: hidden;
+	    min-width: 375px;
+	    background-color: rgb(236 236 236 / 70%);
+	    color: #000;
+	    text-align: center;
+	    border-radius: 13px;
+	    box-shadow: #cfcfcf 1px 1px 0px 1px;
+	    padding: 13px 16px;
+	    position: absolute;
+	    top: 15px;
+	    left: 35px;
+	    z-index: 1;
+	    opacity: 0;
+	    transition: opacity .6s;
+	    text-align: left;
+	}
+	
+	.tooltiptext- > img {
+		margin: 7px 0;
+	}
+	
+	.tooltiptext- > p {
+		margin: 0 0 3px;
+	}
+	
+	.tooltip-:hover .tooltiptext- {
+	    visibility: visible;
+	    opacity: 1;
+	}
+	.tooltip- > p {
+	    font-size: 27px;
+	    margin: 20px 0;
+	}
+	.tooltiptext-::after {
+	    content: "";
+	    position: absolute;
+	    top: 29.5px;
+	    right: 100%;
+	    margin-top: -17px;
+	    border-width: 5px;
+	    border-style: solid;
+	    border-color: transparent #000000 transparent transparent;
+	}
+	
+	.svg_tooltip {
+		top: 19.5px;
+    	left: -3px;
+		position: absolute;
+		animation: my-move 10s ease-in-out infinite;
+	}
+	
+	
+	@keyframes my-move {
+		/*5% {*/
+		/*	transform: scale(-1, 1)*/
+		/*}*/
+		/*10% {*/
+		/*	transform: scale(1, 1)*/
+		/*}*/
+		
+		90% {
+			transform: rotate(0deg);
+		}
+		100% {
+			transform: rotate(360deg);
+		}
+	}
+	@-webkit-keyframes my-move {
+		90% {
+			transform: rotate(0deg);
+		}
+		100% {
+			transform: rotate(360deg);
+		}
+	}
+	
+	.additionalFunctionality {
+		display: flex; 
+		position: absolute; 
+		max-width: 1200px;
+		margin-left: 235px;
+		gap: 15px;
+	}
+	.additionalFunctionality button {
+		font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+	}
+
+	
+	.additionalFunctionality-btn {
+		background-color: rgb(236 236 236)!important; 
+		margin: 15px 0; 
+		border: 0px!important; 
+		border-radius: 5px; 
+		box-shadow: #cfcfcf 1px 1px 0px 1px; 
+		text-align: center; 
+		color: #000000!important; 
+		font-weight: 500; 
+		font-size: 15px; 
+		padding: 0.50em 2em 0.5em 2em;
+	}
+	
+	.MaskInputPLUGINRECOLOR {
+		border: 2px solid #00ecff!important;
+		background-color: #433c47!important;
+	}
